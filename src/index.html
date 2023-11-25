@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
+    <title>Homework 04</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="select-wraper">
-        <select class="breed-select"></select>
-      </div>
-      <p class="loader"></p>
-    </div>
-    <div class="cat-info" hidden></div>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="sorting"
+        autocomplete="off"
+        placeholder="Enter asc or desc"
+      />
+      <button type="submit">Sort</button>
+    </form>
 
-    <script src="index.js" type="module"></script>
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+    <div class="js-guard"></div>
+    <button type="button" class="load-more" hidden>Load more</button>
+
+    <script src="index2.js" type="module"></script>
   </body>
 </html>
